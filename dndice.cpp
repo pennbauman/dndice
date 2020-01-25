@@ -54,7 +54,7 @@ node* parse(string s) {
 		}
 	}
 	for (int i = 0; i < s.size(); i++) {
-		if (s[i] == 'd') {
+		if ((s[i] == 'd') || (s[i] == 'D')) {
 			//cout << s.substr(0, i) << "d" << s.substr(i+1) << endl;
 			fin->data = "d";
 			fin->left = parse(s.substr(0,i));
@@ -70,7 +70,6 @@ node* parse(string s) {
 	} else {
 		cout << "ERROR: Syntax '" << s << "'" << endl;
 	}
-
 	return NULL;
 }
 
