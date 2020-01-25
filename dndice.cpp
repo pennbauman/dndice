@@ -57,10 +57,19 @@ node* parse(string s) {
 		if ((s[i] == 'd') || (s[i] == 'D')) {
 			//cout << s.substr(0, i) << "d" << s.substr(i+1) << endl;
 			fin->data = "d";
-			fin->left = parse(s.substr(0,i));
+			if (i == 0)
+				fin->left = parse("1");
+			else
+				fin->left = parse(s.substr(0,i));
 			fin->right = parse(s.substr(i+1));
 			return fin;
 		}
+	}
+	if (s == "%") {
+		fin->data = "100";
+		fin->left = NULL;
+		fin->right = NULL;
+		return fin;
 	}
 	if (isNum(s)) {
 		fin->data = s;

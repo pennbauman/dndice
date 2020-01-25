@@ -8,4 +8,8 @@ dndice: dndice.cpp node.h
 
 test: dndice
 	./a.out 2d6 + 3
+	@echo ""
 	./a.out +4
+
+clean:
+	@rm -f *.o *.out dndice
