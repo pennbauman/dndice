@@ -3,7 +3,7 @@
 
 CXX=clang++
 
-dndice: dndice.cpp node.h
+dndice: dndice.cpp
 	$(CXX) dndice.cpp
 
 test: dndice
