@@ -8,14 +8,14 @@ On Linux run the following in the dndice directory, it requires root access:
 	./install.sh
 
 ## Usage
-Once installed, DnDice and be used by running:
+Once installed, DnDice can be used by running:
 
 	dndice [options] [dice]
 
 ### Dice Formatting
 Dice are formatted in the same style as in D&D and many other RPGs. Meaning, `NdM` means N M sided dice are rolled and their results summed. Multiple set of dice and constants can be added with `+`, subtracted with `-`, and multiplied with `*` or `x` placed between them.
 
-`+N` or `-N` will be assumed to be 1d20+N or 1d20-N
+`+N` or `-N` will be assumed to be `1d20+N` or `1d20-N`.
 
 ### Options
 `--version`
