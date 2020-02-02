@@ -11,3 +11,4 @@ else
 fi
 
 sudo cp dndice /bin/
+echo "Installed"
