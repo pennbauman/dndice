@@ -1,6 +1,5 @@
-/* Penn Bauman
-pennbauman@protonmail.com
-*/
+// Penn Bauman
+// pennbauman@protonmail.com
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -188,7 +187,7 @@ int main(int argc, char* argv[]) {
 	for (int i = 1; i < argc; i++) {
 		current = argv[i];
 		if (current == "--version") {
-			cout << "DnDice version 0.1" << endl;
+			cout << "DnDice version 0.2" << endl;
 			return 0;
 		} else if ((current == "--help") || (current == "-h")) {
 			printHelp();
