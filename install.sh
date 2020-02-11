@@ -10,5 +10,5 @@ else
 	g++ -O2 dndice.cpp -o dndice
 fi
 
-sudo cp dndice /bin/
+sudo mv dndice /bin/
 echo "Installed"

@@ -161,7 +161,7 @@ int rollDice(node* root, bool loud) {
 // Delete tree
 void deleteTree(node* root) {
 	if (root == NULL)
-		return
+		return;
 	deleteTree(root->left);
 	deleteTree(root->right);
 	delete root;
